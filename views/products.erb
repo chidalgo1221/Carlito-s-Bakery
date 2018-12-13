@@ -1,0 +1,84 @@
+<html>
+<head>
+    <title>Friendly Bakery</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>    
+        <center>
+            <img src="https://i.pinimg.com/originals/50/a4/9a/50a49ad09eeaa3d185cacdd678dd7cf6.png" width= "10%">
+        </center>
+        <audio controls autoplay hidden>
+        <source src="cooking.mp3" type="audio/ogg">
+        <source src="cooking.mp3" type="audio/mpeg">
+        </audio>
+        <ul class="nav">
+            <li><a href="/" class="link">Home</a></li>
+            <li><a href="products" class="link">Products</a></li>
+            <li><a href="cookies" class="link">Cookies</a></li>
+            <li><a href="muffin" class="link">Cupcakes</a></li>
+            <li><a href="cake" class="link">Cakes</a></li>
+        </ul>
+    </header>
+    <center>
+        <h1>Carlitos Bakery</h1>
+        <img src="https://c1.staticflickr.com/7/6052/6286529888_6791578588_b.jpg" width= "55%">
+        <h1>Our Sweets</h1>
+    </center>
+    <center>
+    <h2>Cakes:</h2>
+    <div class="cakee">
+    <div class="shadow">
+     <img src="<%= @panetela.image %>" class="product-img">
+     <p><%= @panetela.description %></p>
+     <p><%= @panetela.price %></p>
+     </div>
+     <div class="shadow">
+     <img src="<%= @sangria.image %>" class="product-img">
+     <p><%= @sangria.description %></p>
+     <p><%= @sangria.price %></p>
+    </div>
+    <div class="shadow">
+    <img src="<%= @tres.image %>" class="product-img">
+    <p><%= @tres.description %></p>
+    <p><%= @tres.price %></p>
+    </div>
+     </div>
+     <h2>Cookies:</h2>
+     <div class="cookiee">
+     <div class="shadow">
+     <img src="<%= @tainos.image %>" class="product-img">
+     <p><%= @tainos.description %></p>
+     <p><%= @tainos.price %></p>
+     </div>
+     <div class="shadow">
+     <img src="<%= @polvo.image %>" class="product-img">
+     <p><%= @polvo.description %></p>
+     <p><%= @polvo.price %></p>
+     </div>
+     <div class="shadow">
+     <img src="<%= @coco.image %>" class="product-img">
+     <p><%= @coco.description %></p>
+     <p><%= @coco.price %></p>
+     </div>
+     <h2>Cupcakes:</h2>
+     <div class="cup">
+     <div class="shadow">
+     <img src="<%= @coquito.image %>" class="product-img">
+     <p><%= @coquito.description %></p>
+     <p><%= @coquito.price %></p>
+     </div>
+     <div class="shadow">
+     <img src="<%= @pina.image %>" class="product-img">
+     <p><%= @pina.description %></p>
+     <p><%= @pina.price %></p>
+     </div>
+     <div class="shadow">
+     <img src="<%= @flan.image %>" class="product-img">
+     <p><%= @flan.description %></p>
+     <p><%= @flan.price %></p>
+     </div>
+     </div>
+     </center>
+</body>
+</html>

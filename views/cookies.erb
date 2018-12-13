@@ -1,0 +1,48 @@
+<html>
+<head>
+    <title>Friendly Bakery</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>    
+        <center>
+            <img src="https://cdn.pixabay.com/photo/2013/07/13/14/06/gingerman-162141__340.png" width= "10%">
+        </center>
+        <audio controls autoplay hidden>
+        <source src="cooking.mp3" type="audio/ogg">
+        <source src="cooking.mp3" type="audio/mpeg">
+        </audio>
+        <ul class="nav">
+            <li><a href="/" class="link">Home</a></li>
+            <li><a href="products" class="link">Products</a></li>
+            <li><a href="cookies" class="link">Cookies</a></li>
+            <li><a href="muffin" class="link">Cupcakes</a></li>
+            <li><a href="cake" class="link">Cakes</a><li>
+        </ul>
+    </header>
+    <center>
+        <h1>Carlitos Bakery</h1>
+        <img src="https://islandsofpuertorico.com/images/plaza-de-armas-san-juan-puerto-rico-places.jpg" width= "55%">
+        <h1>Our Sweets</h1>
+    </center>
+    <center>
+     <h2>Cookies:</h2>
+     <div class="cookiee">
+     <div class="shadow">
+     <img src="<%= @tainos.image %>" class="product-img">
+     <p><%= @tainos.description %></p>
+     <p><%= @tainos.price %></p>
+     </div>
+     <div class="shadow">
+     <img src="<%= @polvo.image %>" class="product-img">
+     <p><%= @polvo.description %></p>
+     <p><%= @polvo.price %></p>
+     </div>
+     <div class="shadow">
+     <img src="<%= @coco.image %>" class="product-img">
+     <p><%= @coco.description %></p>
+     <p><%= @coco.price %></p>
+     </div>
+     </center>
+</body>
+</html>

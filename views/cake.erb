@@ -1,0 +1,49 @@
+<html>
+<head>
+    <title>Friendly Bakery</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>    
+        <center>
+            <img src="http://pngimagesfree.com/Cake/Thumb/3-layers_cake-png.png" width= "10%">
+        </center>
+        <audio controls autoplay hidden>
+        <source src="cooking.mp3" type="audio/ogg">
+        <source src="cooking.mp3" type="audio/mpeg">
+        </audio>
+        <ul class="nav">
+            <li><a href="/" class="link">Home</a></li>
+            <li><a href="products" class="link">Products</a></li>
+            <li><a href="cookies" class="link">Cookies</a></li>
+            <li><a href="muffin" class="link">Cupcakes</a></li>
+            <li><a href="cake" class="link">Cakes</a></li>
+        </ul>
+    </header>
+    <center>
+        <h1>Carlitos Bakery</h1>
+        <img src="https://static1.squarespace.com/static/50a93762e4b0726ad3f124b7/t/513e8fb8e4b022a7a497ff91/1431887320107/San+Juan+1.jpg" width= "55%">
+        <h1>Our Sweets</h1>
+    </center>
+    <center>
+    <h2>Cakes:</h2>
+    <div class="cakee">
+    <div class="shadow">
+     <img src="<%= @panetela.image %>" class="product-img">
+     <p><%= @panetela.description %></p>
+     <p><%= @panetela.price %></p>
+     </div>
+     <div class="shadow">
+     <img src="<%= @sangria.image %>" class="product-img">
+     <p><%= @sangria.description %></p>
+     <p><%= @sangria.price %></p>
+    </div>
+    <div class="shadow">
+    <img src="<%= @tres.image %>" class="product-img">
+    <p><%= @tres.description %></p>
+    <p><%= @tres.price %></p>
+    </div>
+     </div>
+     </center>
+</body>
+</html>
